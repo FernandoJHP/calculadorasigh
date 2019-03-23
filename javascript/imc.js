@@ -3,9 +3,7 @@ function CalcularIMC(){
 	var nPeso, nAltura, nAlturaCM, nDecimal, nResultado;
 	nPeso = document.getElementById('txtPeso').value;
 	nAltura = document.getElementById('txtAltura').value;
-	nAlturaCM = parseInt(nAltura) / 100;
-	nDecimal = parseInt(nPeso) / (nAlturaCM * nAlturaCM);
-	nResultado = Math.round(nDecimal * 10) / 10;
+	nResultado = parseInt(nPeso) / ((parseInt(nAltura)/100) * (parseInt(nAltura)/100));
 
 	if (nResultado < 16) {
 		grado = "Delgadez severa.";
@@ -25,6 +23,6 @@ function CalcularIMC(){
 		grado = "Obeso tipo III.";
 	}
 
-    document.getElementById('rimc').innerHTML = nResultado;
-    document.getElementById('estado').innerHTML = grado;
+	document.getElementById('rimc').innerHTML = Math.round(nResultado * 10)/10;
+	document.getElementById('estado').innerHTML = grado;
 }
