@@ -3,6 +3,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!--Bootstrap CSS-->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/footable.bootstrap.min.css">
 	<style>
 		/* Show it is fixed to the top */
 		body {

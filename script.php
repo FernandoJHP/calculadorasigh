@@ -4,3 +4,6 @@
 	<script src="js/popper.min.js"></script>
 	<!--Bootstrap JS-->
 	<script src="js/bootstrap.min.js"></script>
+	<!--Footable-->
+	<script src="js/footable.min.js"></script>
+	<script src="js/moment.min.js"></script>
